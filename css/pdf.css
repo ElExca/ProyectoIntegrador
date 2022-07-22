@@ -1,0 +1,133 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.compras{
+    width: 50%;
+    position:relative;
+    position:relative; 
+    top:23px; 
+    left:15px; 
+    height: 200px; 
+    float: left;
+}
+
+.ventas{
+    width: 50%;
+    position:relative;
+    position:relative; 
+    top:23px; 
+    left:20px; 
+    height: 200px; 
+    float: left;
+}
+
+a{
+	display: block;
+	width: 400px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 800;
+	border-radius: 20px;
+	margin: 30px 130px;
+	padding: 17px 30px;
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+	text-decoration: none;
+}
+
+.pdf h2{
+    margin-left: 35px;
+    color: black;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.pdf h3{
+    color: black;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+a:hover{
+	background-color: black;
+	border: 1px solid black;
+	color: white;
+}
+
+body {
+	background-color: white;
+}
+
+table{
+    margin-left: 20px;
+    background-color: white ;
+    width: 95%;
+    border-collapse:collapse ;
+    text-align: left;
+    margin-top:10px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.regresar{
+    font-size: 14px;
+    font-weight: 800;
+    width: 150px;
+    border-radius: 20px;
+    padding: 12px 30px;
+	margin-left: 130px;
+}
+
+td, th{
+    padding: 20px;
+}
+
+thead{
+    background-color: black;
+    border-bottom: solid 5px rgb(43, 43, 43);
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: rgb(204, 204, 204);
+}
+
+tr:hover td{
+    background-color: rgb(170, 170, 170);
+    color: white;
+}
+
+button{
+    background-color: white;
+    width: 200px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    border: 1px solid black;
+    color: black;
+    margin-left: 50px;
+    margin-right: 60px;
+    padding: 11px 30px;
+    margin-top: 15px;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    opacity:1;
+    cursor: pointer;
+    
+}
+
+img{
+    margin-bottom: -10px;
+}

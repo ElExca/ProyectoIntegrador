@@ -1,4 +1,9 @@
-*{
+* {
+	padding: 0px;
+	margin: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -10,13 +15,14 @@ body{
 
 .contenedor{
 	width: 700px;
-	height: 450px;
+	height: 850px;
 	padding-top: 40px;
 	border-radius: 9px;
 	border: 1px solid black;
 	box-shadow: -2px 1px 7px 0px rgba(0, 0, 0, 0.7);
-	margin-top: 90px;
+	margin-top: 10px;
 	background-color: white;
+    margin-bottom: 10px;
 }
 
 a{
@@ -40,12 +46,12 @@ select{
     background-color: white;
     border-color: black;
     color: black;
-    width: 250px;
+    width: 300px;
 	padding: 12px 15px;
     border-radius: 20px;
     font-size: 18.5px;
-    margin-top: 50px;
     margin-bottom: 5px;
+    margin-top: 20px;
     cursor: pointer;
     overflow-y: scroll;
     text-decoration: none;
@@ -56,35 +62,35 @@ select:hover{
     color: white;
 }
 
-.opciones{
+option{
     font-size: 19px;
+    border-radius: 20px;
     padding: 12px 24px;
 }
-
 
 .regresar{
     font-size: 18.5px;
     font-weight: 700;
-    width: 100px;
+    width: 150px;
     border-radius: 20px;
     padding: 12px 30px;
     margin-right: 122px;
-    margin-top: 60px;
+    margin-top: 25px;
 }
 
-.quitar h2{
+.letras h2{
     color: black;
     font-size: 60px;
     margin-top: -10px;
     margin-bottom: 10px;
 }
 
-.quitar input{
+input{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     font-weight: 60;
     background-color: white;
-    width: 180px;
+    width: 300px;
     margin-left: 20px;
     margin-right: 20px;
     padding: 13px 30px;
@@ -93,17 +99,23 @@ select:hover{
     margin-top: 20px;
 }
 
+.resultado{
+    margin-top: 5px;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
 .button{
     background-color: white;
-    width: 150px;
+    width: 200px;
     border-radius: 20px;
-    font-size: 18.5px;
-    font-weight: 700;
+    font-size: 16.5px;
+    font-weight: 500;
     border: 1px solid black;
     color: black;
-    margin-left: 50px;
-    margin-right: 60px;
-    padding: 11px 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 11px 15px;
     margin-top: 25px;
 }
 
@@ -113,4 +125,33 @@ select:hover{
     opacity:1;
     cursor: pointer;
     
+}
+
+table{
+    background-color: white ;
+    width: 98%;
+    border-collapse:collapse ;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td, th{
+    padding: 20px;
+}
+
+thead{
+    background-color: black;
+    border-bottom: solid 5px rgb(43, 43, 43);
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: rgb(204, 204, 204);
+}
+
+tr:hover td{
+    background-color: rgb(170, 170, 170);
+    color: white;
 }

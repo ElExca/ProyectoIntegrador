@@ -1,0 +1,119 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+height: auto;
+width: 80px;
+border-radius: 20px;
+background-color: #fff;
+color: black;
+}
+button:hover{
+    background-color: darkturquoise;
+    color: white;	
+	
+}
+
+
+a{
+	display: block;
+	width: 400px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 800;
+	border-radius: 20px;
+	margin: 30px 130px;
+	padding: 17px 30px;
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+	text-decoration: none;
+}
+
+a:hover{
+	background-color: black;
+	border: 1px solid black;
+	color: white;
+}
+
+body {
+	background-color: white;
+}
+
+table{
+    background-color: white ;
+    width: 98%;
+    border-collapse:collapse ;
+    text-align: left;
+    margin-top:10px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.actualizar{
+    margin-right: 130px;
+    width: 170px;
+    padding:12px 30px;
+}
+
+.regresar{
+    font-size: 14px;
+    font-weight: 800;
+    width: 150px;
+    border-radius: 20px;
+    padding: 12px 30px;
+	margin-left: 130px;
+}
+
+.formulario {
+	width: 430px;
+	margin: 20px auto;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+td, th{
+    padding: 20px;
+}
+
+thead{
+    background-color: black;
+    border-bottom: solid 5px rgb(43, 43, 43);
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: rgb(204, 204, 204);
+}
+
+tr:hover td{
+    background-color: rgb(170, 170, 170);
+    color: white;
+}
+
+.formulario input[type="button"] {
+	width: 150px;
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid rgb(3, 90, 189);
+	color: white;
+	background: none;
+	cursor: pointer;
+	border-radius: 10px;
+	font-size: 17px;
+	background-color: rgb(3, 90, 189); 
+}
+
+.formulario input[type="button"] {
+	font-weight: 700;
+}
+
+.formulario input[type="button"]:hover {
+	background: rgb(36, 127, 231);
+    border: 1px solid rgb(36, 127, 231);
+	color: #fff;
+}

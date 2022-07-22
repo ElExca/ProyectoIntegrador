@@ -1,13 +1,35 @@
 * {
 	padding: 0;
-	margin: 0;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
+.contenedor{
+	width: 500px;
+	height: 500px;
+	padding-top: 40px;
+	border-radius: 20px;
+	box-shadow: -2px 1px 7px 0px solid rgba(0, 0, 0, 0.7);
+	margin-top: 90px;
+	margin-left: 500px;
+	background-color: rgb(43, 43, 43);
+	opacity: .94;
+}
+
+.contenedor:hover{
+	opacity: 1;
+}
+.imagen1{
+	height: 130px;
+}
+
 body {
 	font-family: Arial, Sans-serif;
+	background-color: white;
+	background-image: url("../img/fondo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 a{
@@ -18,15 +40,16 @@ a{
 	border-radius: 20px;
 	margin: 30px 130px;
 	padding: 17px 30px;
-	background-color: #3bb7ff;
-	color: #fff;
+	background-color: white;
+	color: black;
+	border: 1px solid black;
 	text-decoration: none;
 }
 
 a:hover{
-	background-color: transparent;
-	border: 1px solid #3bb7ff;
-	color: #3bb7ff;
+	background-color: black;
+	border: 1px solid black;
+	color: white;
 }
 
 .regresar{
@@ -36,22 +59,23 @@ a:hover{
     width: 200px;
     border-radius: 20px;
     padding: 12px 30px;
+	margin-left: 50px;
 }
 
 .boton input:hover{
     background-color: white;
-    color: #3bb7ff;
+    color: black;
     opacity: .8;
     cursor: pointer;
     
 }
 
 .formulario {
-	background: #fff;
-	width: 500px;
+	width: 430px;
 	margin: 20px auto;
 	padding: 20px;
 	border-radius: 5px;
+
 }
 
 .formulario input {
@@ -63,9 +87,10 @@ a:hover{
 .formulario textarea {
 	width: 100%;
 	padding: 20px;
+	margin-top: 30px;
 	margin-bottom: 20px;
-	border-radius: 20px;
-	border:3px solid #ffbe5b;
+	border-radius: 10px;
+	border:3px solid rgb(43, 43, 43);
 	font-size: 20px;
 	font-family: Arial;
 }
@@ -77,26 +102,36 @@ a:hover{
 	max-width: 100%;
 }
 
+.imagen{
+	margin-bottom:-40px ;
+}
+
 .formulario input[type="text"]:focus,
 .formulario input[type="password"]:focus,
 .formulario textarea:focus {
-	border:2px solid #3bb7ff;
+	border:2px solid black;
 }
 
 .formulario input[type="button"] {
 	width: 200px;
 	margin: 0 auto;
 	padding: 10px;
-	border: 1px solid #3bb7ff;
-	color: #3bb7ff;
+	border: 1px solid rgb(3, 90, 189);
+	color: white;
 	background: none;
 	cursor: pointer;
-	border-radius: 3px;
-	font-size: 16px;
+	border-radius: 10px;
+	font-size: 17px;
+	background-color: rgb(3, 90, 189); 
+}
+
+.formulario input[type="button"] {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 800;
+
 }
 
 .formulario input[type="button"]:hover {
-	background: #3bb7ff;
+	background: rgb(36, 127, 231);
 	color: #fff;
 }
-

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/agregar2.css">
+    <script src="../javascript/sesion.js"></script>
+    <script src="../javascript/BD.js"></script>
+    <title>AGREGAR PRODUCTO</title>
+</head>
+<body>
+    <center>
+        <div class="contenedor">
+            <div class="agregarp">
+                <h2>AGREGAR PRODUTOS</h2>
+                <input type="text" name="nproducto" id="nombre" placeholder="Ingrese el nombre del producto">
+                <input type="text" name="cantidad" id="cantidad" placeholder="Ingrese la cantidad">
+                <input type="text" name="preciov" id="pcompra" placeholder="Ingrese el precio de compra">
+                <input type="text" name="precioc" id="pventa" placeholder="Ingrese el precio de venta">
+                <select name="" id="unidad">
+                    <option value="piezas">piezas</option>
+                    <option value="litros">litros</option>
+                    <option value="kilogramos">kilosgramos</option>
+            <   /select>
+                <div class="boton">
+                    <input type="button"class="button is-dark" value="Ingresar" onclick="registro()">
+                </div>
+        </div>
+        <a href="interfaz.html" class="regresar">Volver</a>
+    </div>
+    </center>
+
+
+</body>
+</html>
