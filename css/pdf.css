@@ -7,13 +7,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .compras{
     width: 50%;
     position:relative;
-    position:relative; 
     top:23px; 
-    left:15px; 
+    left:27px; 
     height: 200px; 
     float: left;
 }
@@ -21,9 +19,8 @@
 .ventas{
     width: 50%;
     position:relative;
-    position:relative; 
     top:23px; 
-    left:20px; 
+    left:27px; 
     height: 200px; 
     float: left;
 }
@@ -43,7 +40,7 @@ a{
 }
 
 .pdf h2{
-    margin-left: 35px;
+    margin-left: 5px;
     color: black;
     font-size: 40px;
     margin-top: 10px;
@@ -68,14 +65,13 @@ body {
 }
 
 table{
-    margin-left: 20px;
+    margin-left: 1px;
     background-color: white ;
-    width: 95%;
+    width: 90%;
     border-collapse:collapse ;
     text-align: left;
     margin-top:10px;
     margin-bottom: 10px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .regresar{
@@ -85,6 +81,7 @@ table{
     border-radius: 20px;
     padding: 12px 30px;
 	margin-left: 130px;
+    margin-bottom: -5px;
 }
 
 td, th{
@@ -98,11 +95,11 @@ thead{
 }
 
 tr:nth-child(even){
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(63, 63, 63);
 }
 
 tr:hover td{
-    background-color: rgb(170, 170, 170);
+    background-color: rgb(29, 29, 29);
     color: white;
 }
 
@@ -129,5 +126,7 @@ button:hover{
 }
 
 img{
-    margin-bottom: -10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 100px;
 }

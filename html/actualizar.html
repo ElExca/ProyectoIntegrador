@@ -5,38 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="../javascript/querys.js"></script>
-    <link rel="stylesheet" href="../css/agregar2.css">
+    <link rel="stylesheet" href="../css/actualizar.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>ACTUALIZAR PRODUCTO</title>
 </head>
 <body>
     <center>
-        <div class="contenedor1">
+        <div class="contenedor">
             <div class="actualizarp">
-                <h1>Actualizar producto</h1>
-                
-              <label class="label">Nombre</del></label>
-              <div id="div1">
-              </div>
-            </div>
-    
-            <label class="label">Precio de compra</label>
-              <div class="agregarp">
-                <input id="txt2" class="input">
-            </div>
-                  
-            <div class="agregarp">
-              <label class="label">Precio de venta</label>
-              <div class="control">
-                <input id="txt3" class="input">
-              </div>
+              <h2>ACTUALIZAR</h2>
             </div>
 
-          
-          <br>
+            <div id="div1">
+            </div>
+    
+            <div class="actualizarp">
+              <input id="txt2" class="input" placeholder="Precio de compra">
+            </div>
+                  
+            <div class="actualizarp">
+              <input id="txt3" class="input" placeholder="Precio de venta">
+          </div>
+
             <button class="button is-dark" type="button" onclick="actualizar()">Actualizar</button>
-          <br>    
-          <a href="ver.html" class="regresar">Volver</a>
         </div>
+        <a href="ver.html" class="regresar">REGRESAR</a>
     </center>
 </body>
 <script type="text/javascript" src="../javascript/BD.js"></script>

@@ -200,13 +200,13 @@ let cuentaTotal=[];
         }
         else{
             if (Number(cantidadDeCompra)<0) {
-                alert('No se acaptan cantidades negativas')
-                
+              swal('Error','No se aceptan cantidades negativas','error');                
             }
             else{ 
                 var totalCompra= Number(rows[0].precio_de_compra)*Number(cantidadDeCompra)
-                t.agregar(rows[0].nombre,new producto(rows[0].id_producto,cantidadDeCompra,totalCompra))                        
-            }
+                t.agregar(rows[0].nombre,new producto(rows[0].id_producto,cantidadDeCompra,totalCompra)) 
+                swal('Éxito','Producto agregado a compra','success');
+              }
         }});  
   }
   function agregarPedidoVenta() {
@@ -222,16 +222,18 @@ let cuentaTotal=[];
         }
         else{
             if (Number(cantidadDeCompra)<0) {
-                alert('No se acaptan cantidades negativas')
+              swal('Eror','No se aceptan cantidades negativas','error');                
                 
             }
             else if (Number(cantidadDeCompra)>Number(rows[0].cantidad)) {
-              alert('No hay sufuciente inventario para realizar el pedido')
+              swal('Eror','No hay suficientes productos','error');                
           
             }
             else{ 
                 var totalCompra= Number(rows[0].precio_de_venta)*Number(cantidadDeCompra)
-                t.agregar(rows[0].nombre,new producto(rows[0].id_producto,cantidadDeCompra,totalCompra))                        
+                t.agregar(rows[0].nombre,new producto(rows[0].id_producto,cantidadDeCompra,totalCompra)) 
+                swal('Éxito','Producto agregado a venta','success');
+                       
             }
         }});  
   }
@@ -332,7 +334,8 @@ let cuentaTotal=[];
         console.log(err);
         return;
         }
-        else { alert ("Datos guardados")
+        else { swal('Éxito','Datos guardados','success');
+
           //nombre=id[i]
           //comprar(nombre,cantidad_comprada)
           $query=`select *from productos where nombre ='${id[i]}';`
@@ -409,7 +412,7 @@ function vender() {
       console.log(err);
       return;
       }
-      else { alert ("Datos guardados")
+      else { swal('Éxito','Datos guardados','success');
         //nombre=id[i]
         //comprar(nombre,cantidad_comprada)
         console.log(id[i])

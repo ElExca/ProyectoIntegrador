@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>REGRISTRO</title>
     <link rel="stylesheet" href="../css/arbol.css">
     <script type="text/javascript" src="../javascript/querys.js"></script>
     <script type="text/javascript" src="../javascript/arbolBinario_OK.js"></script>
     <script src="pdf.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </head>
 <body >
   <center>
@@ -21,8 +23,8 @@
       <br>
       <input id="txt9" class="input" placeholder="Ingrese la cantidad de producto">
       <br>
-    <button class="button is-dark" type="button" onclick="agregarPedidoCompra()">Agregar al carrito Compra</button>
-    <button class="button is-dark" type="button" onclick="agregarPedidoVenta()">Agregar al carrito Venta</button>
+    <button class="button is-dark" type="button" onclick="agregarPedidoCompra()">Agregar compra</button>
+    <button class="button is-dark" type="button" onclick="agregarPedidoVenta()">Agregar venta</button>
     <br>
     <button class="button is-dark" type="button" onclick="comprar()">Confirmar Compra</button>
     <button class="button is-dark" type="button" onclick="vender()">Confirmar venta</button>
@@ -33,7 +35,7 @@
     <br>
     <a class="regresar" href="interfaz.html">Regresar</a>
 
-    <div class="boton2">
+    <div class="resultado ">
       <caption>Resultados</caption>
     </div>
 

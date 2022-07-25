@@ -1,3 +1,4 @@
+
 function registro(){
 var nombre=document.getElementById("nombre").value;
 var PVenta=document.getElementById("pventa").value;
@@ -14,12 +15,12 @@ $query=`INSERT INTO productos (id_producto,nombre,precio_de_venta,precio_de_comp
         return;
         }
         else{        
-           alert('producto agregado')
-                         
+            swal('Éxito','Producto agregado','success');
         }
     });
     }
-    else{alert('No se aceptan valores negativos')}}
+    else{swal('Error','Verifique sus datos','error');}
+}
 
 
 

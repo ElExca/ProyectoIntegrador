@@ -148,10 +148,10 @@ thead{
 }
 
 tr:nth-child(even){
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(63, 63, 63);
 }
 
 tr:hover td{
-    background-color: rgb(170, 170, 170);
+    background-color: rgb(29, 29, 29);
     color: white;
 }

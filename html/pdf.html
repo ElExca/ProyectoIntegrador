@@ -4,50 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>REGISTRO</title>
     <link rel="stylesheet" href="../css/pdf.css">
     <script type="text/javascript" src="../javascript/querys.js"></script>
     <script type="text/javascript" src="../javascript/arbolBinario_OK.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../javascript/script.js"></script>
     <script src="../javascript/BD.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </head>
 <body >
     <center>
-    <h1>Reporte de Compras mensuales</h1>
-    <br>
-    <table id="TablaCompras">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nombre de producto</th>
-                <th>Precio de compra</th>
-                <th>Cantidad Comprada</th>
-                <th>Precio total</th>
-            </tr>
-        </thead>
-    </table>
-    <br>
-    <br>
-    <h1>Reporte de Ventas mensuales</h1>
-    <br>
-    <table id="TablaVentas">
-        <thead>
-            <th>ID</th>
-            <th>Nombre de producto</th>
-            <th>Precio de Venta</th>
-            <th>Cantidad Vendida</th>
-            <th>Precio total</th>
-        </thead>
-    </table>
+        <img src="../img/PRODUCTOS A GRANEL.png">
+    </center>
+    <center>
     <button class="button is-dark" type="button" onclick="consultarCompras()">Ver Tablas</button>
-    <br>
-    <button class="button is-dark" type="button" onclick="limpiar()">Corte mensual</button>
-    <br>
-    <a href="interfaz.html" class="regresar">Volver</a>
-    <strong>Presiona el siguiente botón para crear un PDF:</strong>
-    <button id="btnCrearPdf">Generar PDF</button>
+    <button class="button is-dark" type="button" onclick="limpiar()">Corte mensual</button>   
+        <button id="btnCrearPdf">Generar PDF</button>
+    <a href="interfaz.html" class="regresar">REGRESAR</a>      
     </center>
 
+    <div class="compras">
+        <div class="pdf">
+            <h2>Reporte de Compras mensuales</h1>
+        </div>
+        <table id="TablaCompras">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre de producto</th>
+                    <th>Precio de compra</th>
+                    <th>Cantidad Comprada</th>
+                    <th>Precio total</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <div class="ventas">
+        <div class="pdf">
+            <h2>Reporte de Compras mensuales</h1>
+        </div>
+        <table id="TablaVentas">
+            <thead>
+                <th>ID</th>
+                <th>Nombre de producto</th>
+                <th>Precio de Venta</th>
+                <th>Cantidad Vendida</th>
+                <th>Precio total</th>
+            </thead>
+        </table>
+    </div>
 </body>
 </html>
